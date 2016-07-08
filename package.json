@@ -4,7 +4,11 @@
   "description": "Using Angular 2 with Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "tsc && concurrently \"npm run tsc:w\" \"electron .\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
@@ -23,7 +27,28 @@
     "url": "https://github.com/DenisVuyka/ng2-electron/issues"
   },
   "homepage": "https://github.com/DenisVuyka/ng2-electron/#readme",
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.4",
+    "@angular/compiler": "2.0.0-rc.4",
+    "@angular/core": "2.0.0-rc.4",
+    "@angular/forms": "0.2.0",
+    "@angular/http": "2.0.0-rc.4",
+    "@angular/platform-browser": "2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
+    "@angular/router": "3.0.0-beta.1",
+    "@angular/router-deprecated": "2.0.0-rc.2",
+    "@angular/upgrade": "2.0.0-rc.4",
+
+    "systemjs": "0.19.27",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
+  },
   "devDependencies": {
-    "electron-prebuilt": "^1.2.0"
+    "electron-prebuilt": "^1.2.0",
+    "concurrently": "^2.0.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
   }
 }
