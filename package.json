@@ -1,0 +1,29 @@
+{
+  "name": "ng2-electron",
+  "version": "0.1.0",
+  "description": "Using Angular 2 with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisVuyka/ng2-electron.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "Angular"
+  ],
+  "author": "Denys Vuika <denys.vuika@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DenisVuyka/ng2-electron/issues"
+  },
+  "homepage": "https://github.com/DenisVuyka/ng2-electron/#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}
